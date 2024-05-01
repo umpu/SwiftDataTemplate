@@ -13,7 +13,7 @@ struct SwiftDataTemplateApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .modelContainer(for: Value.self)
+                .modelContainer(for: Value.self, isUndoEnabled: true)
         }
     }
 }
